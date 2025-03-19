@@ -1,0 +1,73 @@
+.header {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header__container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo--img {
+    width: auto;
+}
+
+.logo--tittle {
+    font-family: var(--font-main);
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 30%;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar__list--link {
+    color: var(--color-link);
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header__container__buttons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.buttom--login,
+.buttom--sign-up {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.buttom--login {
+    color: var(--color-text);
+    padding: 0.625rem 1.125rem;
+}
+
+.buttom--sign-up {
+    color: var(--color-buttom-sign-up);
+    background-color: var(--background-buttom-sign-up);
+    border: 1px solid var(--background-buttom-sign-up);
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.125rem;
+}
