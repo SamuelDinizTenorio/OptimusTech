@@ -1,20 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url(./reset.css);
-@import url(./styles/header.css);
 
 :root {
-    --background-color-body: #FFFFFF;
-    --color-logo-text: #3A404E;
-    --color-link: #667085;
-    --color-text: #667085;
-    --background-buttom-sign-up: #8E2424;
-    --color-buttom-sign-up: #FFFFFF;
+    --body-background-color: #FFFFFF;
+    --logo-text-color: #3A404E;
+    --link-color: #667085;
+    --text-color: #667085;
+    --buttom-signUp-background-color: #8E2424;
+    --buttom-signUp-color: #FFFFFF;
+    --title-color: #101828;
+    --subtitle-color: #8E2424; 
+}
 
-    --font-main: "Inter", sans-serif;
+* {
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
     background-color: var(--background-color-body);
-    font-size: 1rem;
+    width: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+img {
+    width: auto;
+}
+
+.links {
+    display: flex;
+    margin-right: 30%;
+    gap: 2rem;
+}
+
+.links a {
+    color: var(--text-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+#button--signUp {
+    color: var(--buttom-signUp-color);
+    background-color: var(--buttom-signUp-background-color);
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 25%;
+    gap: 1.5rem;
+}
+
+h1, h3 {
+    font-family: var(--font-main);
+    font-weight: 600;
+}
+
+h3 {
+    color: var(--subtitle-color);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--title-color);
+    line-height: 3.75rem;
+}
+
+p {
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
 }
