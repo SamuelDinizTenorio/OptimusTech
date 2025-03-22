@@ -10,6 +10,7 @@
     --buttom-signUp-color: #FFFFFF;
     --title-color: #101828;
     --subtitle-color: #8E2424; 
+    --metric-number-color: #8E2424;
 }
 
 * {
@@ -95,4 +96,37 @@ p {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.875rem;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 25%;
+    padding-bottom: 6rem;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.metrics__container {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.metrics__container__numbers {
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: var(--metric-number-color);
+}
+
+.metrics__container__title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: var(--title-color);
+}
+
+.metrics__container__text {
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--text-color);
 }
