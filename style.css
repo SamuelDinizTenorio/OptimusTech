@@ -134,20 +134,18 @@ p {
 #vacancies {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
     padding: 6rem 0rem 0rem 0rem;
     gap: 4rem;
 }
 
-#talents {
+.talents {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     gap: 2rem;
 }
 
-#open-vacancies span{
+.talents__subtitle span{
     font-weight: 500;
     font-size: 0.875rem;
     background: #8E24240D;
@@ -160,4 +158,44 @@ h2 {
 
 #team-img {
     width: 85%;
+}
+
+.open-vacancies {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    gap: 1.5rem;
+}
+
+.open-vacancies__title,
+.open-vacancie__title {
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+.open-vacancies__title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.open-vacancie,
+.open-vacancie__informations {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.open-vacancie {
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+    border: 1px solid #EAECF0;
+    border-radius: 1rem;
+}
+
+.open-vacancie__title {
+    font-size: 1.125rem;
+}
+
+.open-vacancie__informations__text {
+    font-size: 1rem;
+    font-weight: 500;
 }
