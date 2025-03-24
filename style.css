@@ -134,7 +134,7 @@ p {
 #vacancies {
     display: flex;
     flex-direction: column;
-    padding: 6rem 0rem 0rem 0rem;
+    padding: 6rem 0rem 6rem 0rem;
     gap: 4rem;
 }
 
@@ -150,10 +150,12 @@ p {
     font-size: 0.875rem;
     background: #8E24240D;
     padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
 }
 
 h2 {
     font-size: 2.25rem;
+    font-weight: 500;
 }
 
 #team-img {
@@ -198,4 +200,29 @@ h2 {
 .open-vacancie__informations__text {
     font-size: 1rem;
     font-weight: 500;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #C3191908;
+    margin: 0rem 10vw 6rem 10vw;
+    padding: 4rem 0rem;
+    gap: 2rem;
+}
+
+.testimonials__subtitle,
+.attribution__function {
+    font-size: 0.875rem;
+}
+
+.attribution__avatar {
+    margin-bottom: 1rem;
+}
+
+.attribution__name {
+    font-size: 1rem;
 }
